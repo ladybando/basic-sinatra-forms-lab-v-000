@@ -12,8 +12,8 @@ class App < Sinatra::Base
     @pg = params[:pg].join(\n)
     @sg = params[:sg].join(\n)
     @pf = params[:pf].join(\n)
-    @sf = params[:sf]
-    @c = params[:c]
+    @sf = params[:sf].join(\n)
+    @c = params[:c].join(\n)
     erb :team
   end
 end
