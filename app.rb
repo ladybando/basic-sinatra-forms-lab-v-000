@@ -11,7 +11,7 @@ class App < Sinatra::Base
   
   post '/team' do
     erb :team
-     @member = [coach == 'Louis Armstrong', 'Harriet Tubman', 'Joan of Arc', 'Malala Yousafzai', 'Sojourner Truth']
+     @members = [coach == 'Louis Armstrong', 'Harriet Tubman', 'Joan of Arc', 'Malala Yousafzai', 'Sojourner Truth']
   end
 
 end
