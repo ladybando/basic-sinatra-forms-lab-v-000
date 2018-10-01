@@ -10,9 +10,9 @@ class App < Sinatra::Base
     @name = params[:name].join('\n')
     @coach = params[:coach].join(\n')
     @pg = params[:pg].join('\n')
-    @sg = params[:sg].join(\n')
-    @pf = params[:pf].join(\n')
-    @sf = params[:sf].join(\n')
+    @sg = params[:sg].join('\n')
+    @pf = params[:pf].join('\n')
+    @sf = params[:sf].join('\n')
     @c = params[:c].join('\n')
     erb :team
   end
