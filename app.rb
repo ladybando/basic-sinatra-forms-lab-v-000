@@ -8,7 +8,7 @@ class App < Sinatra::Base
   
   post '/team' do
     @name = params[:name].join('\n')
-    @coach = params[:coach].join(\n')
+    @coach = params[:coach].join(''\n')
     @pg = params[:pg].join('\n')
     @sg = params[:sg].join('\n')
     @pf = params[:pf].join('\n')
