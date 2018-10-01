@@ -7,13 +7,13 @@ class App < Sinatra::Base
   end
   
   post '/team' do
-    @name = params[:name].join('\n')
-    @coach = params[:coach].join('\n')
-    @pg = params[:pg].join('\n')
-    @sg = params[:sg].join('\n')
-    @pf = params[:pf].join('\n')
-    @sf = params[:sf].join('\n')
-    @c = params[:c].join('\n')
+    @name = params[:name]
+    @coach = params[:coach]
+    @pg = params[:pg]
+    @sg = params[:sg]
+    @pf = params[:pf]
+    @sf = params[:sf]
+    @c = params[:c]
     erb :team
   end
 end
